@@ -1,0 +1,37 @@
+{% extends "structure.html" %}
+
+{% block main %}
+<center><h1>{{message}}</h1></center>
+<br><br><br>
+
+<div class="container-login100-form-btn">
+<div class="wrap-login100-form-btn">
+<div class="login100-form-bgbtn"></div>
+<a href="/login"><button class="login100-form-btn">
+Login!
+</button></a>
+</div>
+</div>
+
+<div class="container-login100-form-btn">
+<div class="wrap-login100-form-btn">
+<div class="login100-form-bgbtn"></div>
+<a href="/signup"><button class="login100-form-btn">
+Sign Up!
+</button></a>
+</div>
+</div>
+
+
+<center><br>
+<div class="">
+<span class="txt1">
+Login as:
+</span>
+<a class="txt2" href="/adminlogin">
+Admin
+</a>
+</div>
+</center>
+
+{% endblock main %}

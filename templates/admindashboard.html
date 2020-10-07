@@ -1,0 +1,33 @@
+{% extends 'structure.html' %}
+
+{% block main %}
+
+<center><h1>Admin Dashboard!</h1>
+  <br><br><br>
+
+{{ message }}<br><br>
+<a href="/display_users"><button type="button" name="display_users">Display Users</button></a>
+
+<table border="1" cellpadding="5" cellspacing="5">
+    {% for row in data %}
+        <tr>
+        {% for column in row %}
+            <td>{{ column }}</td>
+        {% endfor %}
+        </tr>
+    {% endfor %}
+</table>
+
+
+</center>
+
+<div class="text-center p-t-115">
+<span class="txt1">
+Finished Updates?
+</span>
+<a class="txt2" href="/logout">
+Logout
+</a>
+</div>
+
+{% endblock main %}

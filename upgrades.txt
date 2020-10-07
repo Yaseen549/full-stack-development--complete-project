@@ -1,0 +1,5 @@
+1) Learn Flask
+2) Build Basic Application
+3) Integrate Libraries
+4) Design and Compile
+5) Debugging and Publishing
